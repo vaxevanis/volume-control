@@ -5,7 +5,7 @@ import 'open-iconic/font/css/open-iconic-bootstrap.css'; //iconic fonts
 
 
 import './index.css';
-import VolumeController from './App';
+import { VolumeController } from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<VolumeController initialVolume={0}/>, document.getElementById('root'));

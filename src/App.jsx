@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 
 import './App.css';
 
+export const VolumeController = ({ initialVolume }) => {
 
-function VolumeController({ initialVolume }) {
-  const [volume, setVolume] = useState(initialVolume);
-
+const [volume, setVolume] = useState(initialVolume);
   return (
     <div className="input-group">
       <input className="form-control m-2" value={volume} size={3} />
@@ -36,4 +35,3 @@ function VolumeController({ initialVolume }) {
 }; 
 
 
-export default VolumeController;
